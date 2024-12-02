@@ -17,3 +17,10 @@ model Jatek {
   anyag String    
   suly Float
 }
+
+model Gyerek {
+  id Int @id@default(autoincrement()) 
+  nev String
+  cim String
+  jovolte Boolean
+}
