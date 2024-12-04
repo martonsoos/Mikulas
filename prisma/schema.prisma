@@ -1,7 +1,3 @@
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -11,16 +7,16 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Jatek {
-  id Int @id@default(autoincrement())  
-  nev String   
-  anyag String    
-  suly Float
+model gyerek {
+  id      Int     @id @default(autoincrement())
+  nev     String
+  cim     String
+  jovolte Boolean
 }
 
-model Gyerek {
-  id Int @id@default(autoincrement()) 
-  nev String
-  cim String
-  jovolte Boolean
+model jatek {
+  id    Int    @id @default(autoincrement())
+  nev   String
+  anyag String
+  suly  Float
 }

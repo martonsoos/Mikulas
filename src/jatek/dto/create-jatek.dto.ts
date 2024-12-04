@@ -1,4 +1,4 @@
-import { IsIn, IsNotEmpty, IsNumber, IsString } from 'class-validator';
+import {  IsIn,  IsNotEmpty, IsNumber, IsString } from 'class-validator';
 
 export class CreateJatekDto {
   @IsString()
@@ -12,3 +12,4 @@ export class CreateJatekDto {
   @IsNumber()
   suly: number;
 }
+
